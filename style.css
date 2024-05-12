@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+    /* Vous pouvez également télécharger la police et spécifier le chemin local si nécessaire */
+    /* src: url('chemin/local/vers/raleway.woff2') format('woff2'),
+         url('chemin/local/vers/raleway.woff') format('woff'); */
+    font-weight: 400; /* Poids normal */
+    font-style: normal; /* Style normal */
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+    /* src: url('chemin/local/vers/raleway-bold.woff2') format('woff2'),
+         url('chemin/local/vers/raleway-bold.woff') format('woff'); */
+    font-weight: 700; /* Gras */
+    font-style: normal; /* Style normal */
+}
+
+/* Vos autres styles CSS ici */
+
+p {
+    line-height: 1.5;
+    margin-bottom: 10px; /* Correction de la syntaxe. Utiliser l'unité rem ou em pour conserver le ratio d'espacement lorsque l'internaute utilise la fonctionnalité de zoom du navigateur. */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+ul {
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+body {
+    /* Autres styles pour le body */
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    background: rgb(249, 247, 226);
+}
+
+.download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 10%;
+}
+
+.download:hover {
+    background-color: #0056b3;
+}
+
+.Downloads {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 10%;
+    
+}
+
+/* Uniformiser le nom des classes CSS (kebab-case par exemple) */
+.Downloads:hover {
+    background-color: #0056b3;
+}
+
+/* Renommer la classe CSS pour correspondre à son utilisation et non ce qu'elle contient (par exemple: .sous-titre ou .) */
+.h3centre {
+    text-align: center;
+}
+
+.videocentre {
+    margin-left: 10%;
+}
+
+/* Définir une classe CSS spécifique pour la police et la taille des caractères, pour éviter de la définir plusieurs fois ? */
+.menu {
+    background-color: rgb(35, 35, 35);
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#menu_home {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#menu_downloads {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#menu_guide {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#menu_support {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif; /* Utilisation de @font-face */
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.burger-menu {
+    display: none; /* Masquer par défaut */
+    cursor: pointer;
+    /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #dedede;
+    margin: 5px 0;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        position: relative;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu.active a {
+        display: block;
+        margin-bottom: 10px; /* Espacement entre les liens */
+    }
+}
